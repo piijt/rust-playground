@@ -3,24 +3,22 @@
 ## Docs
 
 [how google rusts](https://google.github.io/comprehensive-rust/)
+
 [rusts learning & docs entries](https://www.rust-lang.org/learn)
 
-## setup
-
+### setup
 cargo new
 cargo init
 
 cargo run
-
 - add `--release` for compiling for production
 
 cargo build
-
 - add `--release` for compiling for production
+- rustc <PATH> -> invokes compiler directly
 
-cargo clippy
-
-rustc <PATH> -> invokes compiler directly
+### Linting
+`cargo clippy`
 
 ----------------------
 ## Formatting, code coverage and tests
