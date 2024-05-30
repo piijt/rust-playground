@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>hello-wasm world</title>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <script type="module">
+      import init, { greet } from "./pkg/wasm.js";
+      init().then(() => {  
+        const message = greet("WebAssembly");
+        alert(message)
+      });
+    </script>
+  </body>
+</html>

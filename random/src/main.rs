@@ -20,12 +20,16 @@ pub fn handle_response() -> std::io::Result<Option<(Option<Data>, i32)>> {
     todo!();
 }
 
-#[tokio::main]
-async fn main() -> Result<(), reqwest::Error> {
-    // demo_read_mod();
-    // get_blocking();
-    do_loop();
-    let res = get_async().await;
-    println!("{res:?}");
-    Ok(())
+// #[tokio::main]
+// async fn main() -> Result<(), reqwest::Error> {
+//     // demo_read_mod();
+//     // get_blocking();
+//     // do_loop();
+//     // let res = get_async().await;
+//     // println!("{res:?}");
+//     // Ok(())
+// }
+
+fn main() {
+    demo_read_mod();
 }

@@ -13,6 +13,6 @@ pub fn x_read_f(path: &std::path::Path) -> String {
 pub fn x_write_f(path: &std::path::Path, mut content: String) {
     let input = std::io::stdin();
     let _ = input.read_line(&mut content);
-    // content.push('\n');
+    content.push('\n');
     let _w = write(path, content.clone()).unwrap();
 }
